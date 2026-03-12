@@ -1,0 +1,74 @@
+[
+  {
+    "scenario": "baseline",
+    "timestamp": "2026-03-12T19:19:15.025015+00:00",
+    "num_sessions": 1,
+    "total_turns": 10,
+    "aggregate_put_latency": {
+      "count": 10,
+      "min_ms": 2.15,
+      "avg_ms": 3.48,
+      "p50_ms": 3.08,
+      "p95_ms": 5.64,
+      "p99_ms": 6.29,
+      "max_ms": 6.45
+    },
+    "aggregate_get_latency": {
+      "count": 10,
+      "min_ms": 2.18,
+      "avg_ms": 3.11,
+      "p50_ms": 2.73,
+      "p95_ms": 5.03,
+      "p99_ms": 5.42,
+      "max_ms": 5.52
+    },
+    "total_errors": 0,
+    "error_rate_pct": 0.0,
+    "total_order_violations": 0,
+    "sessions_with_summary": 0,
+    "per_session": [
+      {
+        "session_id": "sim-baseline-0-20260312191914-c4d7a9",
+        "client_id": 0,
+        "scenario": "baseline",
+        "turns_replayed": 10,
+        "put_latency": {
+          "count": 10,
+          "min_ms": 2.15,
+          "avg_ms": 3.48,
+          "p50_ms": 3.08,
+          "p95_ms": 5.64,
+          "p99_ms": 6.29,
+          "max_ms": 6.45
+        },
+        "get_latency": {
+          "count": 10,
+          "min_ms": 2.18,
+          "avg_ms": 3.11,
+          "p50_ms": 2.73,
+          "p95_ms": 5.03,
+          "p99_ms": 5.42,
+          "max_ms": 5.52
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": null,
+        "final_visible_message_count": 0,
+        "final_context_present": false,
+        "final_context_length": 0,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 148.92449998296797
+      }
+    ],
+    "session_length": 10,
+    "concurrent_sessions": 1,
+    "evaluation": {
+      "put_latency": "PASS",
+      "get_latency": "PASS",
+      "errors": "PASS",
+      "ordering": "PASS",
+      "overall": "PASS"
+    }
+  }
+]

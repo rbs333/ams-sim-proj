@@ -1,0 +1,161 @@
+# Agent Memory Server - Simulation/Load Testing Stack
+#
+# Usage:
+#   # Run full simulation with orchestrator
+#   docker-compose -f docker-compose-simulation.yml up
+#
+#   # Run specific scenario
+#   docker-compose -f docker-compose-simulation.yml run --rm orchestrator --scenario medium-heavy
+#
+#   # Run heat map generation
+#   docker-compose -f docker-compose-simulation.yml run --rm orchestrator --scenario heatmap
+#
+#   # Scale load clients manually
+#   docker-compose -f docker-compose-simulation.yml up --scale sim-client=25
+
+volumes:
+  redis_data:
+    driver: local
+  simulation_results:
+    driver: local
+
+networks:
+  simulation-network:
+    driver: bridge
+
+services:
+  # =============================================================================
+  # CORE SERVICES (Redis, API, Worker)
+  # =============================================================================
+  
+  redis:
+    image: redis:8
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    environment:
+      - REDIS_ARGS=--appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - simulation-network
+
+  api:
+    build:
+      context: .
+      target: standard
+    image: redislabs/agent-memory-server:${REDIS_AGENT_MEMORY_VERSION:-latest}
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - PORT=8000
+      - GENERATION_MODEL=gpt-4o-mini
+      - EMBEDDING_MODEL=text-embedding-3-small
+      - LONG_TERM_MEMORY=True
+      - ENABLE_TOPIC_EXTRACTION=True
+      - ENABLE_NER=True
+      - DISABLE_AUTH=true
+      - LOG_LEVEL=WARNING
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./agent_memory_server:/app/agent_memory_server
+    networks:
+      - simulation-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  task-worker:
+    build:
+      context: .
+      target: standard
+    image: redislabs/agent-memory-server:${REDIS_AGENT_MEMORY_VERSION:-latest}
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - GENERATION_MODEL=gpt-4o-mini
+      - EMBEDDING_MODEL=text-embedding-3-small
+      - LONG_TERM_MEMORY=True
+      - ENABLE_TOPIC_EXTRACTION=True
+      - ENABLE_NER=True
+      - DISABLE_AUTH=true
+      - LOG_LEVEL=WARNING
+    depends_on:
+      redis:
+        condition: service_healthy
+    command: ["agent-memory", "task-worker"]
+    volumes:
+      - ./agent_memory_server:/app/agent_memory_server
+    restart: unless-stopped
+    networks:
+      - simulation-network
+
+  # =============================================================================
+  # SIMULATION SERVICES
+  # =============================================================================
+
+  orchestrator:
+    build:
+      context: ./simulation
+    environment:
+      - API_BASE_URL=http://api:8000
+      - SCENARIO=${SCENARIO:-medium-heavy}
+      - CONCURRENT_SESSIONS=${CONCURRENT_SESSIONS:-10}
+      - SESSION_LENGTH=${SESSION_LENGTH:-50}
+    depends_on:
+      api:
+        condition: service_healthy
+    volumes:
+      - ./simulation_results:/results
+    networks:
+      - simulation-network
+    command: ["orchestrator.py", "--scenario", "${SCENARIO:-all}"]
+
+  # Individual load client (can be scaled)
+  sim-client:
+    build:
+      context: ./simulation
+    profiles: ["scale"]
+    environment:
+      - API_BASE_URL=http://api:8000
+      - CONCURRENT_SESSIONS=${CONCURRENT_SESSIONS:-5}
+      - SESSION_LENGTH=${SESSION_LENGTH:-50}
+      - SCENARIO=${SCENARIO:-scaled}
+    depends_on:
+      api:
+        condition: service_healthy
+    volumes:
+      - ./simulation_results:/results
+    networks:
+      - simulation-network
+    command: ["load_runner.py"]
+
+  # =============================================================================
+  # MONITORING (Optional)
+  # =============================================================================
+
+  redis-insight:
+    profiles: ["debug"]
+    image: redis/redisinsight:latest
+    ports:
+      - "16381:5540"
+    depends_on:
+      - redis
+    networks:
+      - simulation-network
+

@@ -1,0 +1,2234 @@
+[
+  {
+    "scenario": "short-light",
+    "timestamp": "2026-03-12T19:24:38.607327+00:00",
+    "num_sessions": 10,
+    "total_turns": 100,
+    "aggregate_put_latency": {
+      "count": 100,
+      "min_ms": 2.04,
+      "avg_ms": 2.68,
+      "p50_ms": 2.46,
+      "p95_ms": 4.29,
+      "p99_ms": 5.18,
+      "max_ms": 5.72
+    },
+    "aggregate_get_latency": {
+      "count": 100,
+      "min_ms": 1.8,
+      "avg_ms": 2.68,
+      "p50_ms": 2.38,
+      "p95_ms": 4.77,
+      "p99_ms": 6.54,
+      "max_ms": 8.72
+    },
+    "total_errors": 0,
+    "error_rate_pct": 0.0,
+    "total_order_violations": 0,
+    "sessions_with_summary": 0,
+    "failure_summary": {
+      "recent_messages_lost": 550,
+      "ordering_errors": 0,
+      "summary_issues": 0,
+      "consistency_errors": 90,
+      "total_issues": 640
+    },
+    "failure_samples": {
+      "recent_messages_lost": [
+        {
+          "turn": 1,
+          "expected_recent": 1,
+          "missing_count": 1,
+          "missing_preview": [
+            "Message 1 about project planning. Context details."
+          ]
+        },
+        {
+          "turn": 2,
+          "expected_recent": 2,
+          "missing_count": 2,
+          "missing_preview": [
+            "Message 1 about project planning. Context details.",
+            "Message 2 about code review. Context details. Cont"
+          ]
+        },
+        {
+          "turn": 1,
+          "expected_recent": 1,
+          "missing_count": 1,
+          "missing_preview": [
+            "Message 1 about project planning. Context details."
+          ]
+        },
+        {
+          "turn": 2,
+          "expected_recent": 2,
+          "missing_count": 2,
+          "missing_preview": [
+            "Message 1 about project planning. Context details.",
+            "Message 2 about code review. Context details. Cont"
+          ]
+        },
+        {
+          "turn": 1,
+          "expected_recent": 1,
+          "missing_count": 1,
+          "missing_preview": [
+            "Message 1 about project planning. Context details."
+          ]
+        },
+        {
+          "turn": 2,
+          "expected_recent": 2,
+          "missing_count": 2,
+          "missing_preview": [
+            "Message 1 about project planning. Context details.",
+            "Message 2 about code review. Context details. Cont"
+          ]
+        },
+        {
+          "turn": 1,
+          "expected_recent": 1,
+          "missing_count": 1,
+          "missing_preview": [
+            "Message 1 about project planning. Context details."
+          ]
+        },
+        {
+          "turn": 2,
+          "expected_recent": 2,
+          "missing_count": 2,
+          "missing_preview": [
+            "Message 1 about project planning. Context details.",
+            "Message 2 about code review. Context details. Cont"
+          ]
+        },
+        {
+          "turn": 1,
+          "expected_recent": 1,
+          "missing_count": 1,
+          "missing_preview": [
+            "Message 1 about project planning. Context details."
+          ]
+        },
+        {
+          "turn": 2,
+          "expected_recent": 2,
+          "missing_count": 2,
+          "missing_preview": [
+            "Message 1 about project planning. Context details.",
+            "Message 2 about code review. Context details. Cont"
+          ]
+        }
+      ],
+      "ordering_errors": [],
+      "summary_issues": [],
+      "consistency_errors": [
+        {
+          "turn": 2,
+          "issue": "read_after_write_mismatch",
+          "put_message_count": 2,
+          "get_message_count": 0,
+          "difference": 2
+        },
+        {
+          "turn": 3,
+          "issue": "read_after_write_mismatch",
+          "put_message_count": 3,
+          "get_message_count": 0,
+          "difference": 3
+        },
+        {
+          "turn": 2,
+          "issue": "read_after_write_mismatch",
+          "put_message_count": 2,
+          "get_message_count": 0,
+          "difference": 2
+        },
+        {
+          "turn": 3,
+          "issue": "read_after_write_mismatch",
+          "put_message_count": 3,
+          "get_message_count": 0,
+          "difference": 3
+        },
+        {
+          "turn": 2,
+          "issue": "read_after_write_mismatch",
+          "put_message_count": 2,
+          "get_message_count": 0,
+          "difference": 2
+        },
+        {
+          "turn": 3,
+          "issue": "read_after_write_mismatch",
+          "put_message_count": 3,
+          "get_message_count": 0,
+          "difference": 3
+        },
+        {
+          "turn": 2,
+          "issue": "read_after_write_mismatch",
+          "put_message_count": 2,
+          "get_message_count": 0,
+          "difference": 2
+        },
+        {
+          "turn": 3,
+          "issue": "read_after_write_mismatch",
+          "put_message_count": 3,
+          "get_message_count": 0,
+          "difference": 3
+        },
+        {
+          "turn": 2,
+          "issue": "read_after_write_mismatch",
+          "put_message_count": 2,
+          "get_message_count": 0,
+          "difference": 2
+        },
+        {
+          "turn": 3,
+          "issue": "read_after_write_mismatch",
+          "put_message_count": 3,
+          "get_message_count": 0,
+          "difference": 3
+        }
+      ]
+    },
+    "per_session": [
+      {
+        "session_id": "sim-short-light-0-20260312192437-3a08d3",
+        "client_id": 0,
+        "scenario": "short-light",
+        "turns_replayed": 10,
+        "put_latency": {
+          "count": 10,
+          "min_ms": 2.28,
+          "avg_ms": 3.54,
+          "p50_ms": 3.26,
+          "p95_ms": 5.27,
+          "p99_ms": 5.63,
+          "max_ms": 5.72
+        },
+        "get_latency": {
+          "count": 10,
+          "min_ms": 2.35,
+          "avg_ms": 4.21,
+          "p50_ms": 3.85,
+          "p95_ms": 7.17,
+          "p99_ms": 8.41,
+          "max_ms": 8.72
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": null,
+        "final_visible_message_count": 0,
+        "final_context_present": false,
+        "final_context_length": 0,
+        "message_order_violations": 0,
+        "missing_recent_messages": 55,
+        "total_runtime_ms": 141.9854999985546,
+        "failure_details": {
+          "recent_messages_lost": [
+            {
+              "turn": 1,
+              "expected_recent": 1,
+              "missing_count": 1,
+              "missing_preview": [
+                "Message 1 about project planning. Context details."
+              ]
+            },
+            {
+              "turn": 2,
+              "expected_recent": 2,
+              "missing_count": 2,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont"
+              ]
+            },
+            {
+              "turn": 3,
+              "expected_recent": 3,
+              "missing_count": 3,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 4,
+              "expected_recent": 4,
+              "missing_count": 4,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 5,
+              "expected_recent": 5,
+              "missing_count": 5,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 6,
+              "expected_recent": 6,
+              "missing_count": 6,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 7,
+              "expected_recent": 7,
+              "missing_count": 7,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 8,
+              "expected_recent": 8,
+              "missing_count": 8,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 9,
+              "expected_recent": 9,
+              "missing_count": 9,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 10,
+              "expected_recent": 10,
+              "missing_count": 10,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            }
+          ],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": [
+            {
+              "turn": 2,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 2,
+              "get_message_count": 0,
+              "difference": 2
+            },
+            {
+              "turn": 3,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 3,
+              "get_message_count": 0,
+              "difference": 3
+            },
+            {
+              "turn": 4,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 4,
+              "get_message_count": 0,
+              "difference": 4
+            },
+            {
+              "turn": 5,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 5,
+              "get_message_count": 0,
+              "difference": 5
+            },
+            {
+              "turn": 6,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 6,
+              "get_message_count": 0,
+              "difference": 6
+            },
+            {
+              "turn": 7,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 7,
+              "get_message_count": 0,
+              "difference": 7
+            },
+            {
+              "turn": 8,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 8,
+              "get_message_count": 0,
+              "difference": 8
+            },
+            {
+              "turn": 9,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 9,
+              "get_message_count": 0,
+              "difference": 9
+            },
+            {
+              "turn": 10,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 10,
+              "get_message_count": 0,
+              "difference": 10
+            }
+          ]
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-short-light-1-20260312192437-f2170a",
+        "client_id": 1,
+        "scenario": "short-light",
+        "turns_replayed": 10,
+        "put_latency": {
+          "count": 10,
+          "min_ms": 2.45,
+          "avg_ms": 3.27,
+          "p50_ms": 2.91,
+          "p95_ms": 4.84,
+          "p99_ms": 5.1,
+          "max_ms": 5.17
+        },
+        "get_latency": {
+          "count": 10,
+          "min_ms": 1.87,
+          "avg_ms": 3.13,
+          "p50_ms": 2.44,
+          "p95_ms": 5.28,
+          "p99_ms": 5.62,
+          "max_ms": 5.71
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": null,
+        "final_visible_message_count": 0,
+        "final_context_present": false,
+        "final_context_length": 0,
+        "message_order_violations": 0,
+        "missing_recent_messages": 55,
+        "total_runtime_ms": 75.37637499626726,
+        "failure_details": {
+          "recent_messages_lost": [
+            {
+              "turn": 1,
+              "expected_recent": 1,
+              "missing_count": 1,
+              "missing_preview": [
+                "Message 1 about project planning. Context details."
+              ]
+            },
+            {
+              "turn": 2,
+              "expected_recent": 2,
+              "missing_count": 2,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont"
+              ]
+            },
+            {
+              "turn": 3,
+              "expected_recent": 3,
+              "missing_count": 3,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 4,
+              "expected_recent": 4,
+              "missing_count": 4,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 5,
+              "expected_recent": 5,
+              "missing_count": 5,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 6,
+              "expected_recent": 6,
+              "missing_count": 6,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 7,
+              "expected_recent": 7,
+              "missing_count": 7,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 8,
+              "expected_recent": 8,
+              "missing_count": 8,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 9,
+              "expected_recent": 9,
+              "missing_count": 9,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 10,
+              "expected_recent": 10,
+              "missing_count": 10,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            }
+          ],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": [
+            {
+              "turn": 2,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 2,
+              "get_message_count": 0,
+              "difference": 2
+            },
+            {
+              "turn": 3,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 3,
+              "get_message_count": 0,
+              "difference": 3
+            },
+            {
+              "turn": 4,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 4,
+              "get_message_count": 0,
+              "difference": 4
+            },
+            {
+              "turn": 5,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 5,
+              "get_message_count": 0,
+              "difference": 5
+            },
+            {
+              "turn": 6,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 6,
+              "get_message_count": 0,
+              "difference": 6
+            },
+            {
+              "turn": 7,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 7,
+              "get_message_count": 0,
+              "difference": 7
+            },
+            {
+              "turn": 8,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 8,
+              "get_message_count": 0,
+              "difference": 8
+            },
+            {
+              "turn": 9,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 9,
+              "get_message_count": 0,
+              "difference": 9
+            },
+            {
+              "turn": 10,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 10,
+              "get_message_count": 0,
+              "difference": 10
+            }
+          ]
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-short-light-2-20260312192437-26af1f",
+        "client_id": 2,
+        "scenario": "short-light",
+        "turns_replayed": 10,
+        "put_latency": {
+          "count": 10,
+          "min_ms": 2.11,
+          "avg_ms": 2.34,
+          "p50_ms": 2.35,
+          "p95_ms": 2.55,
+          "p99_ms": 2.64,
+          "max_ms": 2.67
+        },
+        "get_latency": {
+          "count": 10,
+          "min_ms": 1.86,
+          "avg_ms": 2.3,
+          "p50_ms": 2.31,
+          "p95_ms": 2.65,
+          "p99_ms": 2.75,
+          "max_ms": 2.77
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": null,
+        "final_visible_message_count": 0,
+        "final_context_present": false,
+        "final_context_length": 0,
+        "message_order_violations": 0,
+        "missing_recent_messages": 55,
+        "total_runtime_ms": 57.855082995956764,
+        "failure_details": {
+          "recent_messages_lost": [
+            {
+              "turn": 1,
+              "expected_recent": 1,
+              "missing_count": 1,
+              "missing_preview": [
+                "Message 1 about project planning. Context details."
+              ]
+            },
+            {
+              "turn": 2,
+              "expected_recent": 2,
+              "missing_count": 2,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont"
+              ]
+            },
+            {
+              "turn": 3,
+              "expected_recent": 3,
+              "missing_count": 3,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 4,
+              "expected_recent": 4,
+              "missing_count": 4,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 5,
+              "expected_recent": 5,
+              "missing_count": 5,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 6,
+              "expected_recent": 6,
+              "missing_count": 6,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 7,
+              "expected_recent": 7,
+              "missing_count": 7,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 8,
+              "expected_recent": 8,
+              "missing_count": 8,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 9,
+              "expected_recent": 9,
+              "missing_count": 9,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 10,
+              "expected_recent": 10,
+              "missing_count": 10,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            }
+          ],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": [
+            {
+              "turn": 2,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 2,
+              "get_message_count": 0,
+              "difference": 2
+            },
+            {
+              "turn": 3,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 3,
+              "get_message_count": 0,
+              "difference": 3
+            },
+            {
+              "turn": 4,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 4,
+              "get_message_count": 0,
+              "difference": 4
+            },
+            {
+              "turn": 5,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 5,
+              "get_message_count": 0,
+              "difference": 5
+            },
+            {
+              "turn": 6,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 6,
+              "get_message_count": 0,
+              "difference": 6
+            },
+            {
+              "turn": 7,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 7,
+              "get_message_count": 0,
+              "difference": 7
+            },
+            {
+              "turn": 8,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 8,
+              "get_message_count": 0,
+              "difference": 8
+            },
+            {
+              "turn": 9,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 9,
+              "get_message_count": 0,
+              "difference": 9
+            },
+            {
+              "turn": 10,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 10,
+              "get_message_count": 0,
+              "difference": 10
+            }
+          ]
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-short-light-3-20260312192437-b5366c",
+        "client_id": 3,
+        "scenario": "short-light",
+        "turns_replayed": 10,
+        "put_latency": {
+          "count": 10,
+          "min_ms": 2.32,
+          "avg_ms": 2.72,
+          "p50_ms": 2.64,
+          "p95_ms": 3.29,
+          "p99_ms": 3.33,
+          "max_ms": 3.34
+        },
+        "get_latency": {
+          "count": 10,
+          "min_ms": 2.34,
+          "avg_ms": 2.56,
+          "p50_ms": 2.52,
+          "p95_ms": 2.85,
+          "p99_ms": 2.86,
+          "max_ms": 2.86
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": null,
+        "final_visible_message_count": 0,
+        "final_context_present": false,
+        "final_context_length": 0,
+        "message_order_violations": 0,
+        "missing_recent_messages": 55,
+        "total_runtime_ms": 65.88733399985358,
+        "failure_details": {
+          "recent_messages_lost": [
+            {
+              "turn": 1,
+              "expected_recent": 1,
+              "missing_count": 1,
+              "missing_preview": [
+                "Message 1 about project planning. Context details."
+              ]
+            },
+            {
+              "turn": 2,
+              "expected_recent": 2,
+              "missing_count": 2,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont"
+              ]
+            },
+            {
+              "turn": 3,
+              "expected_recent": 3,
+              "missing_count": 3,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 4,
+              "expected_recent": 4,
+              "missing_count": 4,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 5,
+              "expected_recent": 5,
+              "missing_count": 5,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 6,
+              "expected_recent": 6,
+              "missing_count": 6,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 7,
+              "expected_recent": 7,
+              "missing_count": 7,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 8,
+              "expected_recent": 8,
+              "missing_count": 8,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 9,
+              "expected_recent": 9,
+              "missing_count": 9,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 10,
+              "expected_recent": 10,
+              "missing_count": 10,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            }
+          ],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": [
+            {
+              "turn": 2,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 2,
+              "get_message_count": 0,
+              "difference": 2
+            },
+            {
+              "turn": 3,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 3,
+              "get_message_count": 0,
+              "difference": 3
+            },
+            {
+              "turn": 4,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 4,
+              "get_message_count": 0,
+              "difference": 4
+            },
+            {
+              "turn": 5,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 5,
+              "get_message_count": 0,
+              "difference": 5
+            },
+            {
+              "turn": 6,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 6,
+              "get_message_count": 0,
+              "difference": 6
+            },
+            {
+              "turn": 7,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 7,
+              "get_message_count": 0,
+              "difference": 7
+            },
+            {
+              "turn": 8,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 8,
+              "get_message_count": 0,
+              "difference": 8
+            },
+            {
+              "turn": 9,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 9,
+              "get_message_count": 0,
+              "difference": 9
+            },
+            {
+              "turn": 10,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 10,
+              "get_message_count": 0,
+              "difference": 10
+            }
+          ]
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-short-light-4-20260312192438-3de8f9",
+        "client_id": 4,
+        "scenario": "short-light",
+        "turns_replayed": 10,
+        "put_latency": {
+          "count": 10,
+          "min_ms": 2.12,
+          "avg_ms": 2.47,
+          "p50_ms": 2.42,
+          "p95_ms": 2.93,
+          "p99_ms": 2.93,
+          "max_ms": 2.93
+        },
+        "get_latency": {
+          "count": 10,
+          "min_ms": 2.03,
+          "avg_ms": 2.33,
+          "p50_ms": 2.28,
+          "p95_ms": 2.8,
+          "p99_ms": 3.08,
+          "max_ms": 3.14
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": null,
+        "final_visible_message_count": 0,
+        "final_context_present": false,
+        "final_context_length": 0,
+        "message_order_violations": 0,
+        "missing_recent_messages": 55,
+        "total_runtime_ms": 58.48745797993615,
+        "failure_details": {
+          "recent_messages_lost": [
+            {
+              "turn": 1,
+              "expected_recent": 1,
+              "missing_count": 1,
+              "missing_preview": [
+                "Message 1 about project planning. Context details."
+              ]
+            },
+            {
+              "turn": 2,
+              "expected_recent": 2,
+              "missing_count": 2,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont"
+              ]
+            },
+            {
+              "turn": 3,
+              "expected_recent": 3,
+              "missing_count": 3,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 4,
+              "expected_recent": 4,
+              "missing_count": 4,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 5,
+              "expected_recent": 5,
+              "missing_count": 5,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 6,
+              "expected_recent": 6,
+              "missing_count": 6,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 7,
+              "expected_recent": 7,
+              "missing_count": 7,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 8,
+              "expected_recent": 8,
+              "missing_count": 8,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 9,
+              "expected_recent": 9,
+              "missing_count": 9,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 10,
+              "expected_recent": 10,
+              "missing_count": 10,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            }
+          ],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": [
+            {
+              "turn": 2,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 2,
+              "get_message_count": 0,
+              "difference": 2
+            },
+            {
+              "turn": 3,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 3,
+              "get_message_count": 0,
+              "difference": 3
+            },
+            {
+              "turn": 4,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 4,
+              "get_message_count": 0,
+              "difference": 4
+            },
+            {
+              "turn": 5,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 5,
+              "get_message_count": 0,
+              "difference": 5
+            },
+            {
+              "turn": 6,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 6,
+              "get_message_count": 0,
+              "difference": 6
+            },
+            {
+              "turn": 7,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 7,
+              "get_message_count": 0,
+              "difference": 7
+            },
+            {
+              "turn": 8,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 8,
+              "get_message_count": 0,
+              "difference": 8
+            },
+            {
+              "turn": 9,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 9,
+              "get_message_count": 0,
+              "difference": 9
+            },
+            {
+              "turn": 10,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 10,
+              "get_message_count": 0,
+              "difference": 10
+            }
+          ]
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-short-light-5-20260312192438-b1b8d5",
+        "client_id": 5,
+        "scenario": "short-light",
+        "turns_replayed": 10,
+        "put_latency": {
+          "count": 10,
+          "min_ms": 2.21,
+          "avg_ms": 2.51,
+          "p50_ms": 2.55,
+          "p95_ms": 2.67,
+          "p99_ms": 2.7,
+          "max_ms": 2.71
+        },
+        "get_latency": {
+          "count": 10,
+          "min_ms": 1.8,
+          "avg_ms": 2.42,
+          "p50_ms": 2.46,
+          "p95_ms": 2.84,
+          "p99_ms": 2.9,
+          "max_ms": 2.91
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": null,
+        "final_visible_message_count": 0,
+        "final_context_present": false,
+        "final_context_length": 0,
+        "message_order_violations": 0,
+        "missing_recent_messages": 55,
+        "total_runtime_ms": 60.69687500712462,
+        "failure_details": {
+          "recent_messages_lost": [
+            {
+              "turn": 1,
+              "expected_recent": 1,
+              "missing_count": 1,
+              "missing_preview": [
+                "Message 1 about project planning. Context details."
+              ]
+            },
+            {
+              "turn": 2,
+              "expected_recent": 2,
+              "missing_count": 2,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont"
+              ]
+            },
+            {
+              "turn": 3,
+              "expected_recent": 3,
+              "missing_count": 3,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 4,
+              "expected_recent": 4,
+              "missing_count": 4,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 5,
+              "expected_recent": 5,
+              "missing_count": 5,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 6,
+              "expected_recent": 6,
+              "missing_count": 6,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 7,
+              "expected_recent": 7,
+              "missing_count": 7,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 8,
+              "expected_recent": 8,
+              "missing_count": 8,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 9,
+              "expected_recent": 9,
+              "missing_count": 9,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 10,
+              "expected_recent": 10,
+              "missing_count": 10,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            }
+          ],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": [
+            {
+              "turn": 2,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 2,
+              "get_message_count": 0,
+              "difference": 2
+            },
+            {
+              "turn": 3,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 3,
+              "get_message_count": 0,
+              "difference": 3
+            },
+            {
+              "turn": 4,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 4,
+              "get_message_count": 0,
+              "difference": 4
+            },
+            {
+              "turn": 5,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 5,
+              "get_message_count": 0,
+              "difference": 5
+            },
+            {
+              "turn": 6,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 6,
+              "get_message_count": 0,
+              "difference": 6
+            },
+            {
+              "turn": 7,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 7,
+              "get_message_count": 0,
+              "difference": 7
+            },
+            {
+              "turn": 8,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 8,
+              "get_message_count": 0,
+              "difference": 8
+            },
+            {
+              "turn": 9,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 9,
+              "get_message_count": 0,
+              "difference": 9
+            },
+            {
+              "turn": 10,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 10,
+              "get_message_count": 0,
+              "difference": 10
+            }
+          ]
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-short-light-6-20260312192438-9e86f6",
+        "client_id": 6,
+        "scenario": "short-light",
+        "turns_replayed": 10,
+        "put_latency": {
+          "count": 10,
+          "min_ms": 2.24,
+          "avg_ms": 2.82,
+          "p50_ms": 2.54,
+          "p95_ms": 3.95,
+          "p99_ms": 4.21,
+          "max_ms": 4.28
+        },
+        "get_latency": {
+          "count": 10,
+          "min_ms": 2.03,
+          "avg_ms": 2.49,
+          "p50_ms": 2.34,
+          "p95_ms": 3.32,
+          "p99_ms": 3.44,
+          "max_ms": 3.48
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": null,
+        "final_visible_message_count": 0,
+        "final_context_present": false,
+        "final_context_length": 0,
+        "message_order_violations": 0,
+        "missing_recent_messages": 55,
+        "total_runtime_ms": 66.9750000233762,
+        "failure_details": {
+          "recent_messages_lost": [
+            {
+              "turn": 1,
+              "expected_recent": 1,
+              "missing_count": 1,
+              "missing_preview": [
+                "Message 1 about project planning. Context details."
+              ]
+            },
+            {
+              "turn": 2,
+              "expected_recent": 2,
+              "missing_count": 2,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont"
+              ]
+            },
+            {
+              "turn": 3,
+              "expected_recent": 3,
+              "missing_count": 3,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 4,
+              "expected_recent": 4,
+              "missing_count": 4,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 5,
+              "expected_recent": 5,
+              "missing_count": 5,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 6,
+              "expected_recent": 6,
+              "missing_count": 6,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 7,
+              "expected_recent": 7,
+              "missing_count": 7,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 8,
+              "expected_recent": 8,
+              "missing_count": 8,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 9,
+              "expected_recent": 9,
+              "missing_count": 9,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 10,
+              "expected_recent": 10,
+              "missing_count": 10,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            }
+          ],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": [
+            {
+              "turn": 2,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 2,
+              "get_message_count": 0,
+              "difference": 2
+            },
+            {
+              "turn": 3,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 3,
+              "get_message_count": 0,
+              "difference": 3
+            },
+            {
+              "turn": 4,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 4,
+              "get_message_count": 0,
+              "difference": 4
+            },
+            {
+              "turn": 5,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 5,
+              "get_message_count": 0,
+              "difference": 5
+            },
+            {
+              "turn": 6,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 6,
+              "get_message_count": 0,
+              "difference": 6
+            },
+            {
+              "turn": 7,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 7,
+              "get_message_count": 0,
+              "difference": 7
+            },
+            {
+              "turn": 8,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 8,
+              "get_message_count": 0,
+              "difference": 8
+            },
+            {
+              "turn": 9,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 9,
+              "get_message_count": 0,
+              "difference": 9
+            },
+            {
+              "turn": 10,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 10,
+              "get_message_count": 0,
+              "difference": 10
+            }
+          ]
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-short-light-7-20260312192438-6be8e8",
+        "client_id": 7,
+        "scenario": "short-light",
+        "turns_replayed": 10,
+        "put_latency": {
+          "count": 10,
+          "min_ms": 2.1,
+          "avg_ms": 2.41,
+          "p50_ms": 2.36,
+          "p95_ms": 2.79,
+          "p99_ms": 2.9,
+          "max_ms": 2.93
+        },
+        "get_latency": {
+          "count": 10,
+          "min_ms": 2.09,
+          "avg_ms": 2.81,
+          "p50_ms": 2.41,
+          "p95_ms": 4.82,
+          "p99_ms": 6.18,
+          "max_ms": 6.52
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": null,
+        "final_visible_message_count": 0,
+        "final_context_present": false,
+        "final_context_length": 0,
+        "message_order_violations": 0,
+        "missing_recent_messages": 55,
+        "total_runtime_ms": 62.08641600096598,
+        "failure_details": {
+          "recent_messages_lost": [
+            {
+              "turn": 1,
+              "expected_recent": 1,
+              "missing_count": 1,
+              "missing_preview": [
+                "Message 1 about project planning. Context details."
+              ]
+            },
+            {
+              "turn": 2,
+              "expected_recent": 2,
+              "missing_count": 2,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont"
+              ]
+            },
+            {
+              "turn": 3,
+              "expected_recent": 3,
+              "missing_count": 3,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 4,
+              "expected_recent": 4,
+              "missing_count": 4,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 5,
+              "expected_recent": 5,
+              "missing_count": 5,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 6,
+              "expected_recent": 6,
+              "missing_count": 6,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 7,
+              "expected_recent": 7,
+              "missing_count": 7,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 8,
+              "expected_recent": 8,
+              "missing_count": 8,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 9,
+              "expected_recent": 9,
+              "missing_count": 9,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 10,
+              "expected_recent": 10,
+              "missing_count": 10,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            }
+          ],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": [
+            {
+              "turn": 2,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 2,
+              "get_message_count": 0,
+              "difference": 2
+            },
+            {
+              "turn": 3,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 3,
+              "get_message_count": 0,
+              "difference": 3
+            },
+            {
+              "turn": 4,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 4,
+              "get_message_count": 0,
+              "difference": 4
+            },
+            {
+              "turn": 5,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 5,
+              "get_message_count": 0,
+              "difference": 5
+            },
+            {
+              "turn": 6,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 6,
+              "get_message_count": 0,
+              "difference": 6
+            },
+            {
+              "turn": 7,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 7,
+              "get_message_count": 0,
+              "difference": 7
+            },
+            {
+              "turn": 8,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 8,
+              "get_message_count": 0,
+              "difference": 8
+            },
+            {
+              "turn": 9,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 9,
+              "get_message_count": 0,
+              "difference": 9
+            },
+            {
+              "turn": 10,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 10,
+              "get_message_count": 0,
+              "difference": 10
+            }
+          ]
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-short-light-8-20260312192438-fcdd41",
+        "client_id": 8,
+        "scenario": "short-light",
+        "turns_replayed": 10,
+        "put_latency": {
+          "count": 10,
+          "min_ms": 2.14,
+          "avg_ms": 2.35,
+          "p50_ms": 2.38,
+          "p95_ms": 2.51,
+          "p99_ms": 2.54,
+          "max_ms": 2.55
+        },
+        "get_latency": {
+          "count": 10,
+          "min_ms": 1.9,
+          "avg_ms": 2.26,
+          "p50_ms": 2.31,
+          "p95_ms": 2.64,
+          "p99_ms": 2.64,
+          "max_ms": 2.64
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": null,
+        "final_visible_message_count": 0,
+        "final_context_present": false,
+        "final_context_length": 0,
+        "message_order_violations": 0,
+        "missing_recent_messages": 55,
+        "total_runtime_ms": 57.05891700927168,
+        "failure_details": {
+          "recent_messages_lost": [
+            {
+              "turn": 1,
+              "expected_recent": 1,
+              "missing_count": 1,
+              "missing_preview": [
+                "Message 1 about project planning. Context details."
+              ]
+            },
+            {
+              "turn": 2,
+              "expected_recent": 2,
+              "missing_count": 2,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont"
+              ]
+            },
+            {
+              "turn": 3,
+              "expected_recent": 3,
+              "missing_count": 3,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 4,
+              "expected_recent": 4,
+              "missing_count": 4,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 5,
+              "expected_recent": 5,
+              "missing_count": 5,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 6,
+              "expected_recent": 6,
+              "missing_count": 6,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 7,
+              "expected_recent": 7,
+              "missing_count": 7,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 8,
+              "expected_recent": 8,
+              "missing_count": 8,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 9,
+              "expected_recent": 9,
+              "missing_count": 9,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 10,
+              "expected_recent": 10,
+              "missing_count": 10,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            }
+          ],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": [
+            {
+              "turn": 2,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 2,
+              "get_message_count": 0,
+              "difference": 2
+            },
+            {
+              "turn": 3,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 3,
+              "get_message_count": 0,
+              "difference": 3
+            },
+            {
+              "turn": 4,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 4,
+              "get_message_count": 0,
+              "difference": 4
+            },
+            {
+              "turn": 5,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 5,
+              "get_message_count": 0,
+              "difference": 5
+            },
+            {
+              "turn": 6,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 6,
+              "get_message_count": 0,
+              "difference": 6
+            },
+            {
+              "turn": 7,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 7,
+              "get_message_count": 0,
+              "difference": 7
+            },
+            {
+              "turn": 8,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 8,
+              "get_message_count": 0,
+              "difference": 8
+            },
+            {
+              "turn": 9,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 9,
+              "get_message_count": 0,
+              "difference": 9
+            },
+            {
+              "turn": 10,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 10,
+              "get_message_count": 0,
+              "difference": 10
+            }
+          ]
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-short-light-9-20260312192438-2d6feb",
+        "client_id": 9,
+        "scenario": "short-light",
+        "turns_replayed": 10,
+        "put_latency": {
+          "count": 10,
+          "min_ms": 2.04,
+          "avg_ms": 2.35,
+          "p50_ms": 2.3,
+          "p95_ms": 2.57,
+          "p99_ms": 2.62,
+          "max_ms": 2.64
+        },
+        "get_latency": {
+          "count": 10,
+          "min_ms": 1.98,
+          "avg_ms": 2.28,
+          "p50_ms": 2.26,
+          "p95_ms": 2.55,
+          "p99_ms": 2.55,
+          "max_ms": 2.55
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": null,
+        "final_visible_message_count": 0,
+        "final_context_present": false,
+        "final_context_length": 0,
+        "message_order_violations": 0,
+        "missing_recent_messages": 55,
+        "total_runtime_ms": 56.97945802239701,
+        "failure_details": {
+          "recent_messages_lost": [
+            {
+              "turn": 1,
+              "expected_recent": 1,
+              "missing_count": 1,
+              "missing_preview": [
+                "Message 1 about project planning. Context details."
+              ]
+            },
+            {
+              "turn": 2,
+              "expected_recent": 2,
+              "missing_count": 2,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont"
+              ]
+            },
+            {
+              "turn": 3,
+              "expected_recent": 3,
+              "missing_count": 3,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 4,
+              "expected_recent": 4,
+              "missing_count": 4,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 5,
+              "expected_recent": 5,
+              "missing_count": 5,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 6,
+              "expected_recent": 6,
+              "missing_count": 6,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 7,
+              "expected_recent": 7,
+              "missing_count": 7,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 8,
+              "expected_recent": 8,
+              "missing_count": 8,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 9,
+              "expected_recent": 9,
+              "missing_count": 9,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            },
+            {
+              "turn": 10,
+              "expected_recent": 10,
+              "missing_count": 10,
+              "missing_preview": [
+                "Message 1 about project planning. Context details.",
+                "Message 2 about code review. Context details. Cont",
+                "Message 3 about debugging. Context details. Contex"
+              ]
+            }
+          ],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": [
+            {
+              "turn": 2,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 2,
+              "get_message_count": 0,
+              "difference": 2
+            },
+            {
+              "turn": 3,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 3,
+              "get_message_count": 0,
+              "difference": 3
+            },
+            {
+              "turn": 4,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 4,
+              "get_message_count": 0,
+              "difference": 4
+            },
+            {
+              "turn": 5,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 5,
+              "get_message_count": 0,
+              "difference": 5
+            },
+            {
+              "turn": 6,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 6,
+              "get_message_count": 0,
+              "difference": 6
+            },
+            {
+              "turn": 7,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 7,
+              "get_message_count": 0,
+              "difference": 7
+            },
+            {
+              "turn": 8,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 8,
+              "get_message_count": 0,
+              "difference": 8
+            },
+            {
+              "turn": 9,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 9,
+              "get_message_count": 0,
+              "difference": 9
+            },
+            {
+              "turn": 10,
+              "issue": "read_after_write_mismatch",
+              "put_message_count": 10,
+              "get_message_count": 0,
+              "difference": 10
+            }
+          ]
+        },
+        "expected_summary_at_turn": null
+      }
+    ],
+    "session_length": 10,
+    "concurrent_sessions": 10,
+    "evaluation": {
+      "put_latency": "PASS",
+      "get_latency": "PASS",
+      "errors": "PASS",
+      "ordering": "PASS",
+      "recent_messages": "FAIL",
+      "summaries": "PASS",
+      "consistency": "FAIL",
+      "overall": "FAIL"
+    }
+  }
+]

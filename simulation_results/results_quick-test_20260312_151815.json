@@ -1,0 +1,149 @@
+{
+  "scenario": "quick-test",
+  "timestamp": "2026-03-12T19:18:15.368656+00:00",
+  "num_sessions": 2,
+  "total_turns": 10,
+  "aggregate_put_latency": {
+    "count": 10,
+    "min_ms": 3.86,
+    "avg_ms": 103.66,
+    "p50_ms": 4.94,
+    "p95_ms": 549.33,
+    "p99_ms": 905.26,
+    "max_ms": 994.24
+  },
+  "aggregate_get_latency": {
+    "count": 10,
+    "min_ms": 2.56,
+    "avg_ms": 4.35,
+    "p50_ms": 4.52,
+    "p95_ms": 5.27,
+    "p99_ms": 5.32,
+    "max_ms": 5.33
+  },
+  "total_errors": 10,
+  "error_rate_pct": 100.0,
+  "total_order_violations": 0,
+  "sessions_with_summary": 0,
+  "per_session": [
+    {
+      "session_id": "sim-quick-test-0-20260312191814-450602",
+      "client_id": 0,
+      "scenario": "quick-test",
+      "turns_replayed": 5,
+      "put_latency": {
+        "count": 5,
+        "min_ms": 4.13,
+        "avg_ms": 202.69,
+        "p50_ms": 5.12,
+        "p95_ms": 796.42,
+        "p99_ms": 954.68,
+        "max_ms": 994.24
+      },
+      "get_latency": {
+        "count": 5,
+        "min_ms": 2.95,
+        "avg_ms": 4.47,
+        "p50_ms": 4.45,
+        "p95_ms": 5.3,
+        "p99_ms": 5.33,
+        "max_ms": 5.33
+      },
+      "error_count": 5,
+      "errors": [
+        {
+          "turn": 1,
+          "error": "object of type 'NoneType' has no len()",
+          "type": "TypeError"
+        },
+        {
+          "turn": 2,
+          "error": "object of type 'NoneType' has no len()",
+          "type": "TypeError"
+        },
+        {
+          "turn": 3,
+          "error": "object of type 'NoneType' has no len()",
+          "type": "TypeError"
+        },
+        {
+          "turn": 4,
+          "error": "object of type 'NoneType' has no len()",
+          "type": "TypeError"
+        },
+        {
+          "turn": 5,
+          "error": "object of type 'NoneType' has no len()",
+          "type": "TypeError"
+        }
+      ],
+      "summary_first_seen_turn": null,
+      "final_visible_message_count": 0,
+      "final_context_present": false,
+      "final_context_length": 0,
+      "message_order_violations": 0,
+      "missing_recent_messages": 0,
+      "total_runtime_ms": 1102.390917018056
+    },
+    {
+      "session_id": "sim-quick-test-1-20260312191814-d62fc0",
+      "client_id": 1,
+      "scenario": "quick-test",
+      "turns_replayed": 5,
+      "put_latency": {
+        "count": 5,
+        "min_ms": 3.86,
+        "avg_ms": 4.63,
+        "p50_ms": 4.34,
+        "p95_ms": 5.46,
+        "p99_ms": 5.54,
+        "max_ms": 5.56
+      },
+      "get_latency": {
+        "count": 5,
+        "min_ms": 2.56,
+        "avg_ms": 4.22,
+        "p50_ms": 4.6,
+        "p95_ms": 5.15,
+        "p99_ms": 5.19,
+        "max_ms": 5.19
+      },
+      "error_count": 5,
+      "errors": [
+        {
+          "turn": 1,
+          "error": "object of type 'NoneType' has no len()",
+          "type": "TypeError"
+        },
+        {
+          "turn": 2,
+          "error": "object of type 'NoneType' has no len()",
+          "type": "TypeError"
+        },
+        {
+          "turn": 3,
+          "error": "object of type 'NoneType' has no len()",
+          "type": "TypeError"
+        },
+        {
+          "turn": 4,
+          "error": "object of type 'NoneType' has no len()",
+          "type": "TypeError"
+        },
+        {
+          "turn": 5,
+          "error": "object of type 'NoneType' has no len()",
+          "type": "TypeError"
+        }
+      ],
+      "summary_first_seen_turn": null,
+      "final_visible_message_count": 0,
+      "final_context_present": false,
+      "final_context_length": 0,
+      "message_order_violations": 0,
+      "missing_recent_messages": 0,
+      "total_runtime_ms": 1004.8388330033049
+    }
+  ],
+  "total_runtime_seconds": 1.11
+}

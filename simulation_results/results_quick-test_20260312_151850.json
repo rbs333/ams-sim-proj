@@ -1,0 +1,97 @@
+{
+  "scenario": "quick-test",
+  "timestamp": "2026-03-12T19:18:50.062351+00:00",
+  "num_sessions": 2,
+  "total_turns": 10,
+  "aggregate_put_latency": {
+    "count": 10,
+    "min_ms": 2.0,
+    "avg_ms": 2.35,
+    "p50_ms": 2.27,
+    "p95_ms": 3.01,
+    "p99_ms": 3.12,
+    "max_ms": 3.15
+  },
+  "aggregate_get_latency": {
+    "count": 10,
+    "min_ms": 2.04,
+    "avg_ms": 9.81,
+    "p50_ms": 2.42,
+    "p95_ms": 42.41,
+    "p99_ms": 67.8,
+    "max_ms": 74.15
+  },
+  "total_errors": 0,
+  "error_rate_pct": 0.0,
+  "total_order_violations": 0,
+  "sessions_with_summary": 0,
+  "per_session": [
+    {
+      "session_id": "sim-quick-test-0-20260312191849-87bc39",
+      "client_id": 0,
+      "scenario": "quick-test",
+      "turns_replayed": 5,
+      "put_latency": {
+        "count": 5,
+        "min_ms": 2.0,
+        "avg_ms": 2.32,
+        "p50_ms": 2.07,
+        "p95_ms": 2.99,
+        "p99_ms": 3.12,
+        "max_ms": 3.15
+      },
+      "get_latency": {
+        "count": 5,
+        "min_ms": 2.04,
+        "avg_ms": 17.05,
+        "p50_ms": 3.24,
+        "p95_ms": 60.04,
+        "p99_ms": 71.33,
+        "max_ms": 74.15
+      },
+      "error_count": 0,
+      "errors": [],
+      "summary_first_seen_turn": null,
+      "final_visible_message_count": 0,
+      "final_context_present": false,
+      "final_context_length": 0,
+      "message_order_violations": 0,
+      "missing_recent_messages": 0,
+      "total_runtime_ms": 165.15229200012982
+    },
+    {
+      "session_id": "sim-quick-test-1-20260312191849-a2cf64",
+      "client_id": 1,
+      "scenario": "quick-test",
+      "turns_replayed": 5,
+      "put_latency": {
+        "count": 5,
+        "min_ms": 2.17,
+        "avg_ms": 2.39,
+        "p50_ms": 2.29,
+        "p95_ms": 2.75,
+        "p99_ms": 2.82,
+        "max_ms": 2.84
+      },
+      "get_latency": {
+        "count": 5,
+        "min_ms": 2.17,
+        "avg_ms": 2.57,
+        "p50_ms": 2.41,
+        "p95_ms": 3.34,
+        "p99_ms": 3.53,
+        "max_ms": 3.57
+      },
+      "error_count": 0,
+      "errors": [],
+      "summary_first_seen_turn": null,
+      "final_visible_message_count": 0,
+      "final_context_present": false,
+      "final_context_length": 0,
+      "message_order_violations": 0,
+      "missing_recent_messages": 0,
+      "total_runtime_ms": 83.71008399990387
+    }
+  ],
+  "total_runtime_seconds": 0.18
+}
