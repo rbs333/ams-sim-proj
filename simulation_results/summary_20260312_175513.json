@@ -1,0 +1,2057 @@
+[
+  {
+    "scenario": "extreme",
+    "timestamp": "2026-03-12T21:55:13.111744+00:00",
+    "num_sessions": 50,
+    "total_turns": 5000,
+    "aggregate_put_latency": {
+      "count": 5000,
+      "min_ms": 2.12,
+      "avg_ms": 675.25,
+      "p50_ms": 173.41,
+      "p95_ms": 2338.48,
+      "p99_ms": 4141.06,
+      "max_ms": 8204.63
+    },
+    "aggregate_get_latency": {
+      "count": 5000,
+      "min_ms": 2.11,
+      "avg_ms": 116.79,
+      "p50_ms": 135.02,
+      "p95_ms": 276.7,
+      "p99_ms": 300.11,
+      "max_ms": 322.98
+    },
+    "total_errors": 0,
+    "error_rate_pct": 0.0,
+    "total_order_violations": 0,
+    "sessions_with_summary": 50,
+    "failure_summary": {
+      "recent_messages_lost": 0,
+      "ordering_errors": 0,
+      "summary_issues": 0,
+      "consistency_errors": 0,
+      "total_issues": 0
+    },
+    "failure_samples": {
+      "recent_messages_lost": [],
+      "ordering_errors": [],
+      "summary_issues": [],
+      "consistency_errors": []
+    },
+    "per_session": [
+      {
+        "session_id": "sim-extreme-0-20260312215342-9f436b",
+        "client_id": 0,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 2.12,
+          "avg_ms": 607.41,
+          "p50_ms": 40.24,
+          "p95_ms": 2325.91,
+          "p99_ms": 4325.28,
+          "max_ms": 4836.28
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 2.11,
+          "avg_ms": 45.3,
+          "p50_ms": 15.39,
+          "p95_ms": 176.36,
+          "p99_ms": 280.73,
+          "max_ms": 289.01
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 584,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 65415.959625010146,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-1-20260312215342-09d9fa",
+        "client_id": 1,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 4.06,
+          "avg_ms": 624.56,
+          "p50_ms": 53.97,
+          "p95_ms": 2596.68,
+          "p99_ms": 3784.74,
+          "max_ms": 4452.91
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.48,
+          "avg_ms": 52.44,
+          "p50_ms": 21.39,
+          "p95_ms": 168.16,
+          "p99_ms": 283.01,
+          "max_ms": 305.52
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 516,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 67792.37662500236,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-2-20260312215342-8488ef",
+        "client_id": 2,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 4.51,
+          "avg_ms": 676.64,
+          "p50_ms": 115.5,
+          "p95_ms": 2533.65,
+          "p99_ms": 3289.45,
+          "max_ms": 6361.02
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.12,
+          "avg_ms": 67.75,
+          "p50_ms": 31.82,
+          "p95_ms": 243.58,
+          "p99_ms": 287.94,
+          "max_ms": 317.27
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 493,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 74539.43791598431,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-3-20260312215342-43aebe",
+        "client_id": 3,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 7.79,
+          "avg_ms": 624.14,
+          "p50_ms": 132.01,
+          "p95_ms": 1978.59,
+          "p99_ms": 3811.28,
+          "max_ms": 6202.05
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.77,
+          "avg_ms": 79.59,
+          "p50_ms": 42.05,
+          "p95_ms": 238.85,
+          "p99_ms": 278.02,
+          "max_ms": 280.15
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 509,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 70470.2230830153,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-4-20260312215343-5679be",
+        "client_id": 4,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 11.39,
+          "avg_ms": 663.45,
+          "p50_ms": 135.92,
+          "p95_ms": 2242.14,
+          "p99_ms": 4729.98,
+          "max_ms": 5087.81
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.89,
+          "avg_ms": 89.05,
+          "p50_ms": 56.0,
+          "p95_ms": 248.34,
+          "p99_ms": 281.76,
+          "max_ms": 286.2
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 446,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 75353.50612501497,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-5-20260312215343-da0f08",
+        "client_id": 5,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 15.81,
+          "avg_ms": 777.97,
+          "p50_ms": 155.42,
+          "p95_ms": 2829.09,
+          "p99_ms": 6991.21,
+          "max_ms": 7587.33
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.17,
+          "avg_ms": 87.48,
+          "p50_ms": 67.55,
+          "p95_ms": 253.9,
+          "p99_ms": 287.06,
+          "max_ms": 300.11
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 552,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 86654.38045799965,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-6-20260312215343-8fb046",
+        "client_id": 6,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 18.08,
+          "avg_ms": 679.99,
+          "p50_ms": 153.32,
+          "p95_ms": 2178.65,
+          "p99_ms": 4679.39,
+          "max_ms": 5711.88
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.14,
+          "avg_ms": 94.56,
+          "p50_ms": 76.19,
+          "p95_ms": 240.14,
+          "p99_ms": 278.25,
+          "max_ms": 280.22
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 502,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 77571.27470898558,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-7-20260312215343-bd56a8",
+        "client_id": 7,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 20.28,
+          "avg_ms": 668.87,
+          "p50_ms": 162.7,
+          "p95_ms": 2304.69,
+          "p99_ms": 3921.89,
+          "max_ms": 5801.18
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.94,
+          "avg_ms": 101.54,
+          "p50_ms": 88.7,
+          "p95_ms": 275.76,
+          "p99_ms": 284.39,
+          "max_ms": 292.86
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 596,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 77156.77916698041,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-8-20260312215343-aad11b",
+        "client_id": 8,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 22.4,
+          "avg_ms": 749.24,
+          "p50_ms": 161.04,
+          "p95_ms": 2860.24,
+          "p99_ms": 4436.55,
+          "max_ms": 6870.39
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.98,
+          "avg_ms": 102.79,
+          "p50_ms": 108.83,
+          "p95_ms": 249.42,
+          "p99_ms": 277.75,
+          "max_ms": 316.08
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 572,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 85321.7157080071,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-9-20260312215343-774226",
+        "client_id": 9,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 23.27,
+          "avg_ms": 736.23,
+          "p50_ms": 172.38,
+          "p95_ms": 2950.93,
+          "p99_ms": 5331.17,
+          "max_ms": 8204.63
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.88,
+          "avg_ms": 107.73,
+          "p50_ms": 114.36,
+          "p95_ms": 282.38,
+          "p99_ms": 296.93,
+          "max_ms": 303.0
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 515,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 84521.29904198227,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-10-20260312215343-e374d3",
+        "client_id": 10,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 29.34,
+          "avg_ms": 675.4,
+          "p50_ms": 172.58,
+          "p95_ms": 2155.78,
+          "p99_ms": 2984.6,
+          "max_ms": 7565.43
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.84,
+          "avg_ms": 112.35,
+          "p50_ms": 124.05,
+          "p95_ms": 283.66,
+          "p99_ms": 296.13,
+          "max_ms": 300.07
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 384,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 78905.86649999022,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-11-20260312215343-c3a832",
+        "client_id": 11,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 33.55,
+          "avg_ms": 697.5,
+          "p50_ms": 168.74,
+          "p95_ms": 2461.72,
+          "p99_ms": 4610.34,
+          "max_ms": 7378.48
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.12,
+          "avg_ms": 110.67,
+          "p50_ms": 130.07,
+          "p95_ms": 236.74,
+          "p99_ms": 276.0,
+          "max_ms": 281.12
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 453,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 80945.27687499067,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-12-20260312215343-f3ece0",
+        "client_id": 12,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 36.07,
+          "avg_ms": 694.05,
+          "p50_ms": 172.9,
+          "p95_ms": 2482.69,
+          "p99_ms": 3649.37,
+          "max_ms": 7449.86
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.64,
+          "avg_ms": 119.43,
+          "p50_ms": 131.66,
+          "p95_ms": 284.63,
+          "p99_ms": 307.18,
+          "max_ms": 318.54
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 529,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81496.79283399018,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-13-20260312215343-fcd36b",
+        "client_id": 13,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 38.15,
+          "avg_ms": 687.81,
+          "p50_ms": 175.11,
+          "p95_ms": 2219.89,
+          "p99_ms": 4603.05,
+          "max_ms": 5125.49
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.05,
+          "avg_ms": 118.32,
+          "p50_ms": 132.14,
+          "p95_ms": 284.34,
+          "p99_ms": 301.6,
+          "max_ms": 311.29
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 489,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 80782.78416700778,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-14-20260312215344-5538be",
+        "client_id": 14,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 39.14,
+          "avg_ms": 694.5,
+          "p50_ms": 174.39,
+          "p95_ms": 2241.79,
+          "p99_ms": 3341.89,
+          "max_ms": 7223.59
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.08,
+          "avg_ms": 121.59,
+          "p50_ms": 134.31,
+          "p95_ms": 283.44,
+          "p99_ms": 306.73,
+          "max_ms": 313.09
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 529,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81766.00974999019,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-15-20260312215344-d1ea91",
+        "client_id": 15,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 37.17,
+          "avg_ms": 703.61,
+          "p50_ms": 174.47,
+          "p95_ms": 2328.89,
+          "p99_ms": 4251.56,
+          "max_ms": 5661.74
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.67,
+          "avg_ms": 123.36,
+          "p50_ms": 136.34,
+          "p95_ms": 285.97,
+          "p99_ms": 298.99,
+          "max_ms": 314.77
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 508,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 82844.39204199589,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-16-20260312215344-457ce5",
+        "client_id": 16,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 44.44,
+          "avg_ms": 696.53,
+          "p50_ms": 172.59,
+          "p95_ms": 2417.62,
+          "p99_ms": 4369.51,
+          "max_ms": 4540.85
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.85,
+          "avg_ms": 116.56,
+          "p50_ms": 137.46,
+          "p95_ms": 246.39,
+          "p99_ms": 271.83,
+          "max_ms": 279.58
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 603,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81461.85066600447,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-17-20260312215344-a031b3",
+        "client_id": 17,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 48.77,
+          "avg_ms": 705.16,
+          "p50_ms": 172.26,
+          "p95_ms": 2600.44,
+          "p99_ms": 3848.86,
+          "max_ms": 4506.38
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.83,
+          "avg_ms": 117.86,
+          "p50_ms": 140.0,
+          "p95_ms": 247.51,
+          "p99_ms": 272.49,
+          "max_ms": 280.26
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 488,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 82451.94437500322,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-18-20260312215344-4ae8dd",
+        "client_id": 18,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 52.43,
+          "avg_ms": 650.66,
+          "p50_ms": 170.19,
+          "p95_ms": 2164.65,
+          "p99_ms": 3527.59,
+          "max_ms": 4036.39
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.97,
+          "avg_ms": 118.66,
+          "p50_ms": 142.14,
+          "p95_ms": 248.23,
+          "p99_ms": 276.8,
+          "max_ms": 279.46
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 401,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 77084.9676670041,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-19-20260312215344-d14023",
+        "client_id": 19,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 51.68,
+          "avg_ms": 685.12,
+          "p50_ms": 173.2,
+          "p95_ms": 2447.48,
+          "p99_ms": 3637.89,
+          "max_ms": 4378.88
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.2,
+          "avg_ms": 119.66,
+          "p50_ms": 142.97,
+          "p95_ms": 247.07,
+          "p99_ms": 275.07,
+          "max_ms": 278.76
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 438,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 80634.30358300684,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-20-20260312215344-84fd97",
+        "client_id": 20,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 62.31,
+          "avg_ms": 690.15,
+          "p50_ms": 174.63,
+          "p95_ms": 2569.7,
+          "p99_ms": 3415.89,
+          "max_ms": 5560.2
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.81,
+          "avg_ms": 119.37,
+          "p50_ms": 146.68,
+          "p95_ms": 246.2,
+          "p99_ms": 274.96,
+          "max_ms": 280.6
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 508,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81115.48375000712,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-21-20260312215344-07d6a1",
+        "client_id": 21,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 61.24,
+          "avg_ms": 741.79,
+          "p50_ms": 175.62,
+          "p95_ms": 2495.68,
+          "p99_ms": 3980.36,
+          "max_ms": 5059.99
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.97,
+          "avg_ms": 120.83,
+          "p50_ms": 148.47,
+          "p95_ms": 247.45,
+          "p99_ms": 274.4,
+          "max_ms": 283.87
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 539,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 86431.4498330059,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-22-20260312215344-454234",
+        "client_id": 22,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 64.11,
+          "avg_ms": 687.81,
+          "p50_ms": 180.1,
+          "p95_ms": 2124.39,
+          "p99_ms": 3702.07,
+          "max_ms": 4216.68
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.02,
+          "avg_ms": 122.03,
+          "p50_ms": 149.5,
+          "p95_ms": 247.9,
+          "p99_ms": 273.73,
+          "max_ms": 284.87
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 569,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81172.81062499387,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-23-20260312215344-f0898d",
+        "client_id": 23,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 64.17,
+          "avg_ms": 678.46,
+          "p50_ms": 173.17,
+          "p95_ms": 2235.03,
+          "p99_ms": 3622.64,
+          "max_ms": 4327.81
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.97,
+          "avg_ms": 130.72,
+          "p50_ms": 138.98,
+          "p95_ms": 286.19,
+          "p99_ms": 308.66,
+          "max_ms": 322.98
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 399,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81201.4485829859,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-24-20260312215345-1b9370",
+        "client_id": 24,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 63.93,
+          "avg_ms": 659.37,
+          "p50_ms": 179.58,
+          "p95_ms": 2206.83,
+          "p99_ms": 3064.23,
+          "max_ms": 3764.55
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.95,
+          "avg_ms": 121.94,
+          "p50_ms": 149.85,
+          "p95_ms": 245.47,
+          "p99_ms": 270.84,
+          "max_ms": 278.71
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 447,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 78334.70179198775,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-25-20260312215345-37815b",
+        "client_id": 25,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 62.27,
+          "avg_ms": 663.37,
+          "p50_ms": 176.69,
+          "p95_ms": 2396.77,
+          "p99_ms": 2950.02,
+          "max_ms": 4138.97
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.8,
+          "avg_ms": 131.82,
+          "p50_ms": 142.28,
+          "p95_ms": 284.45,
+          "p99_ms": 305.11,
+          "max_ms": 320.9
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 562,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 79702.66104201437,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-26-20260312215345-2fe9d2",
+        "client_id": 26,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 72.29,
+          "avg_ms": 680.12,
+          "p50_ms": 176.96,
+          "p95_ms": 2350.36,
+          "p99_ms": 4136.92,
+          "max_ms": 5069.5
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.9,
+          "avg_ms": 131.34,
+          "p50_ms": 140.21,
+          "p95_ms": 282.7,
+          "p99_ms": 304.46,
+          "max_ms": 312.44
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 564,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81337.28999999585,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-27-20260312215345-62c56f",
+        "client_id": 27,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 73.72,
+          "avg_ms": 686.89,
+          "p50_ms": 178.15,
+          "p95_ms": 2294.91,
+          "p99_ms": 4829.23,
+          "max_ms": 5391.51
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.0,
+          "avg_ms": 122.7,
+          "p50_ms": 148.7,
+          "p95_ms": 249.47,
+          "p99_ms": 278.55,
+          "max_ms": 279.61
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 573,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81176.84079101309,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-28-20260312215345-290cc1",
+        "client_id": 28,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 69.87,
+          "avg_ms": 655.13,
+          "p50_ms": 173.42,
+          "p95_ms": 2117.28,
+          "p99_ms": 3382.68,
+          "max_ms": 3943.76
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.13,
+          "avg_ms": 132.07,
+          "p50_ms": 140.33,
+          "p95_ms": 286.7,
+          "p99_ms": 312.4,
+          "max_ms": 322.72
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 546,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 78922.56433400325,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-29-20260312215345-83f5a1",
+        "client_id": 29,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 91.73,
+          "avg_ms": 714.37,
+          "p50_ms": 177.76,
+          "p95_ms": 2388.45,
+          "p99_ms": 4378.03,
+          "max_ms": 4735.83
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.27,
+          "avg_ms": 133.25,
+          "p50_ms": 142.98,
+          "p95_ms": 285.21,
+          "p99_ms": 302.77,
+          "max_ms": 313.71
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 510,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 84960.56608299841,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-30-20260312215345-67837a",
+        "client_id": 30,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 87.95,
+          "avg_ms": 654.17,
+          "p50_ms": 186.79,
+          "p95_ms": 2125.68,
+          "p99_ms": 3519.64,
+          "max_ms": 3675.84
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.06,
+          "avg_ms": 124.47,
+          "p50_ms": 150.49,
+          "p95_ms": 248.02,
+          "p99_ms": 274.46,
+          "max_ms": 279.95
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 570,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 78069.11449998734,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-31-20260312215345-8429f5",
+        "client_id": 31,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 89.19,
+          "avg_ms": 630.18,
+          "p50_ms": 178.02,
+          "p95_ms": 1958.08,
+          "p99_ms": 3120.06,
+          "max_ms": 3507.29
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.16,
+          "avg_ms": 133.49,
+          "p50_ms": 141.16,
+          "p95_ms": 281.81,
+          "p99_ms": 299.88,
+          "max_ms": 315.52
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 508,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 76587.59429198108,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-32-20260312215345-b02056",
+        "client_id": 32,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 96.48,
+          "avg_ms": 658.09,
+          "p50_ms": 186.21,
+          "p95_ms": 2175.93,
+          "p99_ms": 2542.88,
+          "max_ms": 4520.54
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.8,
+          "avg_ms": 121.17,
+          "p50_ms": 145.51,
+          "p95_ms": 248.81,
+          "p99_ms": 276.65,
+          "max_ms": 279.21
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 478,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 78231.69208402396,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-33-20260312215345-5ec7cc",
+        "client_id": 33,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 98.94,
+          "avg_ms": 676.2,
+          "p50_ms": 177.84,
+          "p95_ms": 2408.2,
+          "p99_ms": 3756.15,
+          "max_ms": 3944.23
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.12,
+          "avg_ms": 133.82,
+          "p50_ms": 142.73,
+          "p95_ms": 281.98,
+          "p99_ms": 305.94,
+          "max_ms": 313.96
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 471,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81249.60166600067,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-34-20260312215346-9bb5d5",
+        "client_id": 34,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 84.1,
+          "avg_ms": 665.43,
+          "p50_ms": 189.0,
+          "p95_ms": 2008.29,
+          "p99_ms": 3990.36,
+          "max_ms": 4032.79
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.99,
+          "avg_ms": 123.57,
+          "p50_ms": 148.09,
+          "p95_ms": 249.35,
+          "p99_ms": 275.67,
+          "max_ms": 287.04
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 499,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 79129.68170901877,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-35-20260312215346-f5633f",
+        "client_id": 35,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 85.82,
+          "avg_ms": 638.52,
+          "p50_ms": 176.75,
+          "p95_ms": 1973.7,
+          "p99_ms": 3282.14,
+          "max_ms": 4618.17
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.77,
+          "avg_ms": 133.81,
+          "p50_ms": 141.35,
+          "p95_ms": 282.83,
+          "p99_ms": 304.27,
+          "max_ms": 310.31
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 468,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 77454.75775000523,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-36-20260312215346-c89f68",
+        "client_id": 36,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 86.63,
+          "avg_ms": 689.7,
+          "p50_ms": 188.92,
+          "p95_ms": 2205.66,
+          "p99_ms": 3820.28,
+          "max_ms": 3884.71
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.31,
+          "avg_ms": 123.44,
+          "p50_ms": 147.4,
+          "p95_ms": 247.94,
+          "p99_ms": 274.05,
+          "max_ms": 283.5
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 525,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81534.448624996,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-37-20260312215346-b42f9e",
+        "client_id": 37,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 81.24,
+          "avg_ms": 641.82,
+          "p50_ms": 175.94,
+          "p95_ms": 2057.38,
+          "p99_ms": 3705.76,
+          "max_ms": 4408.09
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.86,
+          "avg_ms": 133.33,
+          "p50_ms": 142.45,
+          "p95_ms": 282.38,
+          "p99_ms": 300.55,
+          "max_ms": 310.89
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 561,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 77723.82566702436,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-38-20260312215346-dceb6f",
+        "client_id": 38,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 78.53,
+          "avg_ms": 661.33,
+          "p50_ms": 190.44,
+          "p95_ms": 2065.0,
+          "p99_ms": 3351.92,
+          "max_ms": 3646.38
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.06,
+          "avg_ms": 123.99,
+          "p50_ms": 147.38,
+          "p95_ms": 248.52,
+          "p99_ms": 273.01,
+          "max_ms": 284.93
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 585,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 78756.84350001393,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-39-20260312215346-1b23fd",
+        "client_id": 39,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 80.19,
+          "avg_ms": 676.38,
+          "p50_ms": 177.07,
+          "p95_ms": 2291.86,
+          "p99_ms": 3648.71,
+          "max_ms": 4782.7
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.02,
+          "avg_ms": 133.57,
+          "p50_ms": 142.1,
+          "p95_ms": 283.39,
+          "p99_ms": 305.06,
+          "max_ms": 311.29
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 557,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81228.40575000737,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-40-20260312215346-02ebd7",
+        "client_id": 40,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 69.4,
+          "avg_ms": 668.64,
+          "p50_ms": 190.37,
+          "p95_ms": 2345.24,
+          "p99_ms": 2553.07,
+          "max_ms": 3984.61
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.96,
+          "avg_ms": 122.83,
+          "p50_ms": 146.11,
+          "p95_ms": 246.35,
+          "p99_ms": 274.18,
+          "max_ms": 281.54
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 438,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 79493.03316700389,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-41-20260312215346-2534a9",
+        "client_id": 41,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 75.69,
+          "avg_ms": 675.14,
+          "p50_ms": 174.9,
+          "p95_ms": 2296.86,
+          "p99_ms": 3777.04,
+          "max_ms": 4140.78
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.91,
+          "avg_ms": 133.71,
+          "p50_ms": 142.89,
+          "p95_ms": 282.74,
+          "p99_ms": 302.34,
+          "max_ms": 310.25
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 401,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 81241.69745799736,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-42-20260312215346-9ffd7c",
+        "client_id": 42,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 72.76,
+          "avg_ms": 640.91,
+          "p50_ms": 178.0,
+          "p95_ms": 2037.78,
+          "p99_ms": 2918.84,
+          "max_ms": 3922.03
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.12,
+          "avg_ms": 131.97,
+          "p50_ms": 140.9,
+          "p95_ms": 284.3,
+          "p99_ms": 300.27,
+          "max_ms": 316.3
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 389,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 77571.07270901906,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-43-20260312215346-89d44b",
+        "client_id": 43,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 58.19,
+          "avg_ms": 653.71,
+          "p50_ms": 192.47,
+          "p95_ms": 2185.97,
+          "p99_ms": 3514.99,
+          "max_ms": 3663.18
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.22,
+          "avg_ms": 121.41,
+          "p50_ms": 145.27,
+          "p95_ms": 248.55,
+          "p99_ms": 275.25,
+          "max_ms": 286.83
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 495,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 77791.2134169892,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-44-20260312215347-6fbb54",
+        "client_id": 44,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 55.73,
+          "avg_ms": 638.39,
+          "p50_ms": 175.15,
+          "p95_ms": 2195.84,
+          "p99_ms": 2644.05,
+          "max_ms": 3464.11
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.15,
+          "avg_ms": 133.79,
+          "p50_ms": 143.73,
+          "p95_ms": 283.63,
+          "p99_ms": 304.53,
+          "max_ms": 312.34
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 453,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 77515.65787498839,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-45-20260312215347-1598ee",
+        "client_id": 45,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 57.7,
+          "avg_ms": 656.29,
+          "p50_ms": 173.14,
+          "p95_ms": 2039.95,
+          "p99_ms": 4437.47,
+          "max_ms": 4487.68
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.42,
+          "avg_ms": 133.72,
+          "p50_ms": 143.99,
+          "p95_ms": 285.22,
+          "p99_ms": 308.91,
+          "max_ms": 320.66
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 477,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 79306.97375000454,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-46-20260312215347-c57720",
+        "client_id": 46,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 43.07,
+          "avg_ms": 734.12,
+          "p50_ms": 188.26,
+          "p95_ms": 2370.66,
+          "p99_ms": 4194.33,
+          "max_ms": 4267.71
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.85,
+          "avg_ms": 121.25,
+          "p50_ms": 145.76,
+          "p95_ms": 247.59,
+          "p99_ms": 273.13,
+          "max_ms": 280.53
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 459,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 85808.13200000557,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-47-20260312215347-f78367",
+        "client_id": 47,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 41.61,
+          "avg_ms": 665.67,
+          "p50_ms": 175.42,
+          "p95_ms": 2483.63,
+          "p99_ms": 2771.88,
+          "max_ms": 3063.24
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 4.18,
+          "avg_ms": 132.16,
+          "p50_ms": 144.11,
+          "p95_ms": 285.69,
+          "p99_ms": 304.65,
+          "max_ms": 313.63
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 440,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 80038.59416599153,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-48-20260312215347-dbd333",
+        "client_id": 48,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 29.79,
+          "avg_ms": 676.95,
+          "p50_ms": 193.07,
+          "p95_ms": 2261.14,
+          "p99_ms": 2938.51,
+          "max_ms": 4294.77
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.98,
+          "avg_ms": 119.37,
+          "p50_ms": 146.59,
+          "p95_ms": 249.04,
+          "p99_ms": 275.48,
+          "max_ms": 287.4
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 535,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 79915.45591701288,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      },
+      {
+        "session_id": "sim-extreme-49-20260312215347-60f016",
+        "client_id": 49,
+        "scenario": "extreme",
+        "turns_replayed": 100,
+        "put_latency": {
+          "count": 100,
+          "min_ms": 25.8,
+          "avg_ms": 604.38,
+          "p50_ms": 174.77,
+          "p95_ms": 2023.88,
+          "p99_ms": 2458.13,
+          "max_ms": 2469.35
+        },
+        "get_latency": {
+          "count": 100,
+          "min_ms": 3.89,
+          "avg_ms": 131.72,
+          "p50_ms": 139.95,
+          "p95_ms": 283.41,
+          "p99_ms": 303.56,
+          "max_ms": 313.51
+        },
+        "error_count": 0,
+        "errors": [],
+        "summary_first_seen_turn": 73,
+        "final_visible_message_count": 41,
+        "final_context_present": true,
+        "final_context_length": 436,
+        "message_order_violations": 0,
+        "missing_recent_messages": 0,
+        "total_runtime_ms": 73996.64891700377,
+        "failure_details": {
+          "recent_messages_lost": [],
+          "ordering_errors": [],
+          "summary_issues": [],
+          "consistency_errors": []
+        },
+        "expected_summary_at_turn": null
+      }
+    ],
+    "session_length": 100,
+    "concurrent_sessions": 50,
+    "evaluation": {
+      "put_latency": "FAIL",
+      "get_latency": "WARNING",
+      "errors": "PASS",
+      "ordering": "PASS",
+      "recent_messages": "PASS",
+      "summaries": "PASS",
+      "consistency": "PASS",
+      "overall": "FAIL"
+    }
+  }
+]

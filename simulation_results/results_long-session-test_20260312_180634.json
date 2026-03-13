@@ -1,0 +1,550 @@
+{
+  "scenario": "long-session-test",
+  "timestamp": "2026-03-12T22:06:34.861846+00:00",
+  "num_sessions": 5,
+  "total_turns": 1000,
+  "aggregate_put_latency": {
+    "count": 1000,
+    "min_ms": 1.94,
+    "avg_ms": 35.97,
+    "p50_ms": 20.21,
+    "p95_ms": 108.84,
+    "p99_ms": 129.83,
+    "max_ms": 159.49
+  },
+  "aggregate_get_latency": {
+    "count": 1000,
+    "min_ms": 2.18,
+    "avg_ms": 29.87,
+    "p50_ms": 17.54,
+    "p95_ms": 91.42,
+    "p99_ms": 117.59,
+    "max_ms": 148.92
+  },
+  "total_errors": 0,
+  "error_rate_pct": 0.0,
+  "total_order_violations": 0,
+  "sessions_with_summary": 0,
+  "failure_summary": {
+    "recent_messages_lost": 0,
+    "ordering_errors": 0,
+    "summary_issues": 905,
+    "consistency_errors": 0,
+    "total_issues": 905
+  },
+  "failure_samples": {
+    "recent_messages_lost": [],
+    "ordering_errors": [],
+    "summary_issues": [
+      {
+        "turn": 20,
+        "issue": "summary_missing",
+        "detail": "Expected summary after 20 turns, none found"
+      },
+      {
+        "turn": 21,
+        "issue": "summary_missing",
+        "detail": "Expected summary after 20 turns, none found"
+      },
+      {
+        "turn": 20,
+        "issue": "summary_missing",
+        "detail": "Expected summary after 20 turns, none found"
+      },
+      {
+        "turn": 21,
+        "issue": "summary_missing",
+        "detail": "Expected summary after 20 turns, none found"
+      },
+      {
+        "turn": 20,
+        "issue": "summary_missing",
+        "detail": "Expected summary after 20 turns, none found"
+      },
+      {
+        "turn": 21,
+        "issue": "summary_missing",
+        "detail": "Expected summary after 20 turns, none found"
+      },
+      {
+        "turn": 20,
+        "issue": "summary_missing",
+        "detail": "Expected summary after 20 turns, none found"
+      },
+      {
+        "turn": 21,
+        "issue": "summary_missing",
+        "detail": "Expected summary after 20 turns, none found"
+      },
+      {
+        "turn": 20,
+        "issue": "summary_missing",
+        "detail": "Expected summary after 20 turns, none found"
+      },
+      {
+        "turn": 21,
+        "issue": "summary_missing",
+        "detail": "Expected summary after 20 turns, none found"
+      }
+    ],
+    "consistency_errors": []
+  },
+  "per_session": [
+    {
+      "session_id": "sim-long-session-test-0-20260312220617-319af6",
+      "client_id": 0,
+      "scenario": "long-session-test",
+      "turns_replayed": 200,
+      "put_latency": {
+        "count": 200,
+        "min_ms": 1.94,
+        "avg_ms": 23.03,
+        "p50_ms": 16.07,
+        "p95_ms": 78.24,
+        "p99_ms": 114.85,
+        "max_ms": 129.25
+      },
+      "get_latency": {
+        "count": 200,
+        "min_ms": 2.18,
+        "avg_ms": 31.08,
+        "p50_ms": 16.25,
+        "p95_ms": 104.57,
+        "p99_ms": 116.97,
+        "max_ms": 134.91
+      },
+      "error_count": 0,
+      "errors": [],
+      "summary_first_seen_turn": null,
+      "final_visible_message_count": 200,
+      "final_context_present": false,
+      "final_context_length": 0,
+      "message_order_violations": 0,
+      "missing_recent_messages": 0,
+      "total_runtime_ms": 13237.706208979944,
+      "failure_details": {
+        "recent_messages_lost": [],
+        "ordering_errors": [],
+        "summary_issues": [
+          {
+            "turn": 20,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 21,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 22,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 23,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 24,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 25,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 26,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 27,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 28,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 29,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          }
+        ],
+        "consistency_errors": []
+      },
+      "expected_summary_at_turn": 20
+    },
+    {
+      "session_id": "sim-long-session-test-1-20260312220617-993e87",
+      "client_id": 1,
+      "scenario": "long-session-test",
+      "turns_replayed": 200,
+      "put_latency": {
+        "count": 200,
+        "min_ms": 2.44,
+        "avg_ms": 30.46,
+        "p50_ms": 17.55,
+        "p95_ms": 104.48,
+        "p99_ms": 122.61,
+        "max_ms": 147.87
+      },
+      "get_latency": {
+        "count": 200,
+        "min_ms": 3.37,
+        "avg_ms": 31.54,
+        "p50_ms": 17.65,
+        "p95_ms": 100.13,
+        "p99_ms": 116.14,
+        "max_ms": 148.92
+      },
+      "error_count": 0,
+      "errors": [],
+      "summary_first_seen_turn": null,
+      "final_visible_message_count": 200,
+      "final_context_present": false,
+      "final_context_length": 0,
+      "message_order_violations": 0,
+      "missing_recent_messages": 0,
+      "total_runtime_ms": 14792.909915995551,
+      "failure_details": {
+        "recent_messages_lost": [],
+        "ordering_errors": [],
+        "summary_issues": [
+          {
+            "turn": 20,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 21,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 22,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 23,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 24,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 25,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 26,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 27,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 28,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 29,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          }
+        ],
+        "consistency_errors": []
+      },
+      "expected_summary_at_turn": 20
+    },
+    {
+      "session_id": "sim-long-session-test-2-20260312220617-a98f88",
+      "client_id": 2,
+      "scenario": "long-session-test",
+      "turns_replayed": 200,
+      "put_latency": {
+        "count": 200,
+        "min_ms": 4.65,
+        "avg_ms": 38.28,
+        "p50_ms": 20.85,
+        "p95_ms": 111.35,
+        "p99_ms": 133.05,
+        "max_ms": 140.69
+      },
+      "get_latency": {
+        "count": 200,
+        "min_ms": 5.23,
+        "avg_ms": 30.15,
+        "p50_ms": 17.23,
+        "p95_ms": 80.79,
+        "p99_ms": 107.26,
+        "max_ms": 124.32
+      },
+      "error_count": 0,
+      "errors": [],
+      "summary_first_seen_turn": null,
+      "final_visible_message_count": 200,
+      "final_context_present": false,
+      "final_context_length": 0,
+      "message_order_violations": 0,
+      "missing_recent_messages": 0,
+      "total_runtime_ms": 16079.896125011146,
+      "failure_details": {
+        "recent_messages_lost": [],
+        "ordering_errors": [],
+        "summary_issues": [
+          {
+            "turn": 20,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 21,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 22,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 23,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 24,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 25,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 26,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 27,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 28,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 29,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          }
+        ],
+        "consistency_errors": []
+      },
+      "expected_summary_at_turn": 20
+    },
+    {
+      "session_id": "sim-long-session-test-3-20260312220617-7e6731",
+      "client_id": 3,
+      "scenario": "long-session-test",
+      "turns_replayed": 200,
+      "put_latency": {
+        "count": 200,
+        "min_ms": 6.75,
+        "avg_ms": 42.87,
+        "p50_ms": 26.99,
+        "p95_ms": 113.65,
+        "p99_ms": 129.88,
+        "max_ms": 141.93
+      },
+      "get_latency": {
+        "count": 200,
+        "min_ms": 5.65,
+        "avg_ms": 29.38,
+        "p50_ms": 16.64,
+        "p95_ms": 79.53,
+        "p99_ms": 102.36,
+        "max_ms": 125.27
+      },
+      "error_count": 0,
+      "errors": [],
+      "summary_first_seen_turn": null,
+      "final_visible_message_count": 200,
+      "final_context_present": false,
+      "final_context_length": 0,
+      "message_order_violations": 0,
+      "missing_recent_messages": 0,
+      "total_runtime_ms": 16809.513583983062,
+      "failure_details": {
+        "recent_messages_lost": [],
+        "ordering_errors": [],
+        "summary_issues": [
+          {
+            "turn": 20,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 21,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 22,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 23,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 24,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 25,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 26,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 27,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 28,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 29,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          }
+        ],
+        "consistency_errors": []
+      },
+      "expected_summary_at_turn": 20
+    },
+    {
+      "session_id": "sim-long-session-test-4-20260312220617-3d9389",
+      "client_id": 4,
+      "scenario": "long-session-test",
+      "turns_replayed": 200,
+      "put_latency": {
+        "count": 200,
+        "min_ms": 7.99,
+        "avg_ms": 45.23,
+        "p50_ms": 26.01,
+        "p95_ms": 113.21,
+        "p99_ms": 146.04,
+        "max_ms": 159.49
+      },
+      "get_latency": {
+        "count": 200,
+        "min_ms": 5.93,
+        "avg_ms": 27.18,
+        "p50_ms": 18.51,
+        "p95_ms": 80.81,
+        "p99_ms": 123.27,
+        "max_ms": 126.89
+      },
+      "error_count": 0,
+      "errors": [],
+      "summary_first_seen_turn": null,
+      "final_visible_message_count": 200,
+      "final_context_present": false,
+      "final_context_length": 0,
+      "message_order_violations": 0,
+      "missing_recent_messages": 0,
+      "total_runtime_ms": 16873.10595798772,
+      "failure_details": {
+        "recent_messages_lost": [],
+        "ordering_errors": [],
+        "summary_issues": [
+          {
+            "turn": 20,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 21,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 22,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 23,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 24,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 25,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 26,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 27,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 28,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          },
+          {
+            "turn": 29,
+            "issue": "summary_missing",
+            "detail": "Expected summary after 20 turns, none found"
+          }
+        ],
+        "consistency_errors": []
+      },
+      "expected_summary_at_turn": 20
+    }
+  ],
+  "total_runtime_seconds": 17.27
+}
